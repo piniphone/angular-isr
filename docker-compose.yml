@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  webapp:
+    # env_file: .env
+    build:
+      context: ./webapp
+      # args:
+      #   - API_URL=${API_URL}
+    ports:
+      - "8899:4000"
+    command:
+      "node dist/server/main.js"

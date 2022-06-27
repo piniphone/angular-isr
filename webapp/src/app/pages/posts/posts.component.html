@@ -1,0 +1,7 @@
+<div class="container">
+  <h3 class="text-red-700">Posts list</h3>
+  <div *ngFor="let post of storePosts.items">
+    {{post.title}}
+    <a class="text-blue-500" [routerLink]="'/post/' + post.id">Ver más</a>
+  </div>
+</div>
